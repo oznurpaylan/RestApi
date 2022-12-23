@@ -1,4 +1,4 @@
-const mongoose=require('mongoose');
+import mongoose from 'mongoose'
 
 const conn=()=>{
     mongoose.connect(process.env.DB_URI,{
@@ -12,4 +12,4 @@ const conn=()=>{
     })
 }
 
-module.exports=conn;
+export default conn;

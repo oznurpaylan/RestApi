@@ -1,13 +1,10 @@
-const { Router } = require("express");
-const pageController=require("../controllers/pageControllers")
-const wordController=require("../controllers/wordContoller")
-const routes=Router();
+import express from 'express'
+import * as pageController from "../controllers/pageControllers.js"
 
-routes.get('/',pageController.indexGet);
-routes.get('/register',pageController.registerGet);
+const router = express.Router()
 
-routes.post('/',pageController.indexPost);
-routes.post('/register',pageController.registerPost);
-routes.post('/wordCreate',wordController.createWord);
 
-module.exports=routes
+router.route("/").get(pageController.loginGet)
+router.route("/register").get(pageController.registerGet)
+
+export default router

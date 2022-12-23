@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Login Page</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
 
 </head>
@@ -29,9 +27,11 @@
 		<h5>Giriş</h5>
 		<p>Bir hesabınız yok mu? <a href="register">Hesap oluştur</a></p>
 		<div class="inputs">
-			<input type="text" placeholder="Kullanıcı adı">
+			<input type="text" name="email" placeholder="Eposta">
+			<div class="email error"></div>
 			<br>
-			<input type="password" placeholder="Şifre">
+			<input type="password" name="password" placeholder="Şifre">
+			<div class="password error"></div>
 		</div>
 			
 			<br><br>
@@ -46,5 +46,6 @@
 	</div>
 	
 </div>
+
 </body>
 </html>

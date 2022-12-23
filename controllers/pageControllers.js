@@ -1,19 +1,18 @@
-const path=require('path');
 
-
-module.exports.indexGet=function(req,res){
-    res.render('index');
+const loginGet=(req,res)=>{
+    res.render('login')
 }
 
-
-module.exports.indexPost=function(req,res){
-    res.render('index');
+const loginPost=(req,res)=>{
+    res.render('login')
 }
 
-module.exports.registerGet=function(req,res){
-    res.render('register');
+const registerGet=(req,res)=>{
+    res.render('register')
 }
 
-module.exports.registerPost=function(req,res){
-    res.render('register');
+const registerPost=(req,res)=>{
+    res.render('register')
 }
+
+export{loginGet,loginPost,registerGet,registerPost}

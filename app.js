@@ -1,23 +1,13 @@
-const express = require('express');
-const dotenv=require('dotenv');
-const conn=require('./database/db.js')
-const pageRoutes=require('./routes/pageRoutes')
-const bodyParser = require('body-parser');
-
+import express from 'express'
+import dotenv from 'dotenv'
+import conn from './database/db.js';
+import pageRoute from "./routes/pageRoutes.js"
 
 const app = express();
-const port= process.env.PORT;
-
 dotenv.config();
+
+//db bağlantısı
 conn();
-
-//form elamanlarını pars etmesi için bodyParser
-app.use(bodyParser.urlencoded({extended:true}));
-//json objesi için bodyParser
-app.use(bodyParser.json());
-
-app.use('/',pageRoutes);
-app.use(express.json());
 
 //ejs tamplate engine
 app.set('view engine', 'ejs')
@@ -25,21 +15,11 @@ app.set('view engine', 'ejs')
 //static files middleware
 app.use(express.static('public'))
 
+//routes
+app.use("/",pageRoute)
 
 
-
-// app.get('/',(req,res)=>{
-//     res.render('index')
-// })
-
-// app.get('/register',(req,res)=>{
-//     res.render('register')
-// })
-// app.post('/register',(req,res)=>{
-//     res.render('register')
-// })
-
-
+const port= process.env.PORT || 3000;
 app.listen(port, ()=>{
     console.log(`Uygulama ${port} portunda başlatıldı`);
 });
