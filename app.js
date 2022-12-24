@@ -1,6 +1,7 @@
 import express from 'express'
 import dotenv from 'dotenv'
 import conn from './database/db.js';
+import cookieParser from 'cookie-parser';
 import pageRoute from "./routes/pageRoutes.js"
 import userRoute from "./routes/userRoutes.js"
 
@@ -17,6 +18,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
+app.use(cookieParser())
 
 //routes
 app.use("/",pageRoute)

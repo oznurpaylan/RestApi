@@ -6,5 +6,6 @@ const router = express.Router()
 
 router.route("/").get(pageController.loginGet)
 router.route("/register").get(pageController.registerGet)
+router.route("/index").get(pageController.indexGet)
 
 export default router

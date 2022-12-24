@@ -14,5 +14,13 @@ const registerGet=(req,res)=>{
     });
 }
 
+const indexGet=(req,res)=>{
+    console.log(req.mail)
+    res.render('index', {
+        link: 'index',
+    });
 
-export{loginGet,registerGet}
+}
+
+
+export{loginGet,registerGet,indexGet}
