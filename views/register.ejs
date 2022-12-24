@@ -13,35 +13,34 @@
 <div class="box-form">
 	<div class="left">
 		<div class="overlay">
-		
 		<span>
 			<p>Sosyal medya ile giriş yapın</p>
-			<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-			<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/i/flow/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			<a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
 		</span>
 		</div>
 	</div>
 		<div class="right">
 		<h5>Kayıt Ol</h5>
+		<form action="users/register" method="post">
 		<div class="inputs">
-            <input type="text" placeholder="Ad">
+            <input type="text" name="name" placeholder="Ad">
 			<br>
-            <input type="text" placeholder="Soyad">
+            <input type="text" name="surname" placeholder="Soyad">
 			<br>
-            <input type="text" placeholder="E-posta">
+            <input type="text" name="email" placeholder="E-posta">
 			<br>
-			<input type="text" placeholder="Kullanıcı adı">
+			<input type="text" name="username" placeholder="Kullanıcı adı">
 			<br>
-            <input type="text" placeholder="Şifre Oluşturun">
-			<br>
-			<input type="password" placeholder="Şifre Tekrar">
+            <input type="password" name="password" placeholder="Şifre Oluşturun">
             
 		</div>
 			<br>
 			<button>Kayıt ol </button> 
 			<br>
+		</form>
 	</div>
 </div>
 </body>

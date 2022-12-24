@@ -1,18 +1,18 @@
 
-const loginGet=(req,res)=>{
-    res.render('login')
-}
+//Sayfalar için genel controllerlar
 
-const loginPost=(req,res)=>{
-    res.render('login')
+
+const loginGet=(req,res)=>{
+    res.render('login', {
+        link: 'login',
+    });
 }
 
 const registerGet=(req,res)=>{
-    res.render('register')
+    res.render('register', {
+        link: 'register',
+    });
 }
 
-const registerPost=(req,res)=>{
-    res.render('register')
-}
 
-export{loginGet,loginPost,registerGet,registerPost}
+export{loginGet,registerGet}

@@ -1,5 +1,6 @@
 import mongoose from 'mongoose'
 
+//db bağlantısı
 const conn=()=>{
     mongoose.connect(process.env.DB_URI,{
         dbName:'restApi',
