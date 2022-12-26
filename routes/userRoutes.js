@@ -9,4 +9,5 @@ router.route("/register").post(userController.createUser)
 router.route("/index").get(authMiddleware.authenticateToken, userController.getIndex)
 
 
+
 export default router

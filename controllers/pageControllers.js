@@ -22,5 +22,16 @@ const indexGet=(req,res)=>{
 
 }
 
+const editGet=(req,res)=>{
+    res.render('editWord', {
+        link: 'editWord',
+    });
+}
 
-export{loginGet,registerGet,indexGet}
+const searchGet=(req,res)=>{
+    res.render('searchWord', {
+        link: 'searchWord',
+    });
+}
+
+export{loginGet,registerGet,indexGet,editGet,searchGet}

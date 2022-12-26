@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Kelime Arama</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body { padding-top:100px; }
+</style>
+</head>
+<body class="container">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/index">Anasayfa</a>
+            </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/editWord">Kelime Düzenle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/searchWord">Kelime Ara</a>
+          </li>
+        </ul>
+        <ul class="email text_align_right">
+               <form action="/logout" >
+                <a class="nav-link" href="/logout">Çıkış yap</a>
+                </form>
+
+           </ul>
+      </nav>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <form action="/ara?dataSearch" method="post">
+      <input type="text" name="dataSearch" placeholder="Kelime"> &nbsp;&nbsp;
+      <button>Ara </button><br><br>
+    </form>
+    
+  </div>
+</main>
+
+<footer>
+    <p class="text-center text-muted"> Öznur Paylan</p>
+</footer>
+
+</body>
+</html>

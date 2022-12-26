@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<title>Ana Sayfa</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body { padding-top:100px; }
+</style>
+</head>
+<body class="container">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/editWord">Kelime Düzenle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/searchWord">Kelime Ara</a>
+          </li>
+        </ul>
+        <ul class="email text_align_right">
+               <form action="/logout" >
+                <a class="nav-link" href="/logout">Çıkış yap</a>
+                </form>
+
+           </ul>
+      </nav>
+</header>
+
+<main>
+  <div class="jumbotron">
+    <h1>SÖZLÜK API</h1>
+    <p>Merhabalar,</p>
+    <p>Çalışmanın asıl amacı Node.js ile işlemler yapmaktır. Burada öncelikle Auth işlemleri yapılmıştır. Veri tabanı olarak mongoDB
+       Atlas kullanıldı. Kelime ekleme ve silme gibi CRUD işlemleri yapıldı. Kullanıcı giriş çıkış işlemieri yapıldı.
+    </p>
+  </div>
+</main>
+
+<footer>
+    <p class="text-center text-muted"> Öznur Paylan</p>
+</footer>
+
+</body>
+</html>
