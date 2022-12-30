@@ -100,10 +100,13 @@ console.log('Data oluşturuldu')
 
 const postDataSearch=async(req,res)=>{
     const inData=req.body.dataSearch;
-    console.log(inData); 
-    Data.findOne({ip: inData},(err,data)=>{
+    console.log(inData);
+
+     Data.findOne({word: inData},(err,data)=>{
         if(err){
-            console.log(err);            
+
+            console.log(err);    
+            res.redirect('/searchWord')       
         }
         else{
             res.json(data);

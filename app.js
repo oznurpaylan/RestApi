@@ -4,6 +4,7 @@ import conn from './database/db.js';
 import cookieParser from 'cookie-parser';
 import pageRoute from "./routes/pageRoutes.js"
 import userRoute from "./routes/userRoutes.js"
+import flash from "connect-flash"
 
 const app = express();
 dotenv.config();
@@ -23,6 +24,10 @@ app.use(cookieParser())
 //routes
 app.use("/",pageRoute)
 app.use("/users",userRoute)
+
+
+//flash middeware
+app.use(flash())
 
 
 
