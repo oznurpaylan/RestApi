@@ -14,6 +14,4 @@ router.route("/searchWord").get(pageController.searchGet)
 router.route("/ekle").post(userController.createData)
 router.route("/ara").post(userController.postDataSearch)
 
-
-
 export default router

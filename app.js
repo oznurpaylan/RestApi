@@ -35,6 +35,3 @@ const port= process.env.PORT || 3000;
 app.listen(port, ()=>{
     console.log(`Uygulama ${port} portunda başlatıldı`);
 });
-
-//video 6  model kavramı uygulanmadı. 7-8 yok
- //10. videodan itibaren

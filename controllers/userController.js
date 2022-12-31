@@ -11,6 +11,7 @@ const createUser = async (req, res) => {
             succeded: true,
             user,
         });
+
 console.log('Kullanıcı oluşturuldu')
     } catch (error) {
         res.status(500).json({
